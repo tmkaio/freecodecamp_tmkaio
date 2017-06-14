@@ -6,7 +6,12 @@ var final = [];
         // request handling logic...
         console.log("Some conection happened");
        var url_parts = url.parse(req.url, true);
-       var c = url_parts.query.iso
+
+       var c = url_parts.path.substr(1, url_parts.length);
+       var c = c.replace(/%20/gi, " ");
+
+       console.log(c);
+       //var c = url_parts.query.iso
 
        if (!isNaN(c)){
         var theDate = new Date(c * 1000);
@@ -41,4 +46,4 @@ var final = [];
 
 
     })
-    server.listen(process.env.PORT || 8080);
+    server.listen(8080);
