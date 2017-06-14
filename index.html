@@ -1,0 +1,17 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<script>
+
+  $(document).ready(function(){
+  alert("aqui1");
+    $.getJSON("index.js?iso=1450137600", function(json) {
+      alert("aqui2");
+      $("#resultado").html(JSON.stringify(json));
+    });
+  });
+</script>
+
+<div id="resultado">Aqui</div>
+</html>
