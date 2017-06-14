@@ -46,4 +46,6 @@ var final = [];
 
 
     })
-    server.listen(8080);
+    //server.listen(8080);
+
+    server.listen(process.env.PORT || 8080);
