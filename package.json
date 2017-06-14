@@ -1,14 +1,19 @@
 {
-  "name": "node",
+  "name": "freecodecamp_tmkaio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmkaio/freecodecamp_tmkaio.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.15.3"
-  }
+  "bugs": {
+    "url": "https://github.com/tmkaio/freecodecamp_tmkaio/issues"
+  },
+  "homepage": "https://github.com/tmkaio/freecodecamp_tmkaio#readme"
 }
