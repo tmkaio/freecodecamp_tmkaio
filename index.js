@@ -34,7 +34,7 @@ var final = [];
         }
       }
 
-        final = {unix: varHuman, natural: varUnix};
+        final = {unix: varUnix, natural: varHuman};
 
         res.write(JSON.stringify(final));
         res.end();
